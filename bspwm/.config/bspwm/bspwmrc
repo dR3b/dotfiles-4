@@ -4,7 +4,7 @@ sxhkd &
 nitrogen --restore &
 compton --respect-prop-shadow &
 dunst &
-termite &
+kitty &
 telegram-desktop &
 firefox &
 gphotos-sync --skip-video ~/Pictures/Google\ Photos &
