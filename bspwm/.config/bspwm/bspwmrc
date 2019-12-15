@@ -1,0 +1,35 @@
+#! /bin/sh
+sxhkd &
+~/.config/polybar/launch.sh &
+nitrogen --restore &
+compton --respect-prop-shadow &
+dunst &
+termite &
+telegram-desktop &
+firefox &
+gphotos-sync --skip-video ~/Pictures/Google\ Photos &
+
+bspc monitor -d        
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config active_border_color \#4c566a
+bspc config normal_border_color \#4c566a
+bspc config focused_border_color \#d8dee9
+
+bspc config top_padding 50
+bspc config left_padding 12
+bspc config right_padding 12
+bspc config bottom_padding 12
+
+bspc rule -a code-oss desktop=^2
+bspc rule -a TelegramDesktop desktop=^3
+bspc rule -a firefox desktop=^4 private=on
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+# bspc rule -a Screenkey manage=off

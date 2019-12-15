@@ -1,0 +1,8 @@
+[user]
+	signingkey = 934891CF
+	email = cawatson1993@gmail.com
+	name = Chris Watson
+[github]
+	oauth-token = eef46aa46a22568c11f83c9bde138c26d7c250c9
+[core]
+	editor = vim
