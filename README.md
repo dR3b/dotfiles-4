@@ -28,6 +28,8 @@ stow vim
 
 It will symlink vim. If you wanna use this configurations for root user, use -t argument,
 
+```
 stow -t /root vim
+```
 
 Note: stow will only create a symlink if a config file doesn't already exist. You must delete/backup if there is a default config for a program.
